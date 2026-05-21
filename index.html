@@ -111,6 +111,35 @@
       color: #555;
       margin-left: 4px;
     }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+    }
+    
+    .profile-info {
+      flex: 1;
+    }
+    
+    @media (max-width: 700px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+      }
+    }
 
     footer {
       margin-top: 45px;
