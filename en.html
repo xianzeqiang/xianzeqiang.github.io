@@ -117,11 +117,12 @@
       align-items: center;
       gap: 28px;
     }
-    
+
     .profile-photo {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
+      object-position: center top;
       border-radius: 50%;
       border: 1px solid #ddd;
     }
@@ -130,17 +131,17 @@
       flex: 1;
     }
 
-@media (max-width: 700px) {
-  .profile-section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .profile-photo {
-    width: 130px;
-    height: 130px;
-  }
-}
+    @media (max-width: 700px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .profile-photo {
+        width: 110px;
+        height: auto;
+      }
+    }
 
     footer {
       margin-top: 45px;
